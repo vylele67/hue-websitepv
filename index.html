@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Huế - Cố Đô Hoàng Triều</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth;}
+
+body{
+    font-family:'Montserrat',sans-serif;
+    background:#fff8f3;
+    color:#3b1f1f;
+    transition:0.4s ease;
+}
+
+.dark{background:#140909;color:#f5e6d8;}
+
+nav{
+    position:fixed;
+    width:100%;
+    background:#8b0000;
+    padding:18px 0;
+    text-align:center;
+    z-index:1000;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 40px;
+    font-size:18px;
+}
+
+.hero{
+    height:100vh;
+    background:#8b0000;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+}
+
+.hero h1{
+    font-family:'Playfair Display',serif;
+    font-size:64px;
+    letter-spacing:3px;
+}
+
+section{padding:140px 12%;}
+
+h2{
+    font-family:'Playfair Display',serif;
+    font-size:44px;
+    margin-bottom:30px;
+    color:#8b0000;
+}
+
+.dark h2{color:#e0b97f;}
+
+p{
+    line-height:2;
+    margin-bottom:20px;
+    font-size:18px;
+}
+
+/* GRID */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+    margin-top:40px;
+}
+
+.card{
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    cursor:pointer;
+    transition:0.4s;
+    box-shadow:0 5px 20px rgba(0,0,0,0.15);
+}
+
+.dark .card{background:#2a1a1a;}
+
+.card img{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+    background:#d9d9d9; /* GÁN HÌNH */
+}
+
+.card h3{
+    padding:15px;
+    font-family:'Playfair Display',serif;
+    font-size:22px;
+}
+
+.card-content{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height 0.6s ease;
+    padding:0 20px;
+}
+
+.card.active .card-content{
+    max-height:1200px;
+    padding-bottom:25px;
+}
+
+.card:hover{transform:translateY(-8px);}
+
+footer{
+    background:#8b0000;
+    color:white;
+    text-align:center;
+    padding:40px;
+    margin-top:80px;
+}
+
+.toggle-btn{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    background:#8b0000;
+    color:white;
+    padding:12px 18px;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="#lichsu">Lịch sử</a>
+<a href="#dulich">Du lịch</a>
+<a href="#amthuc">Ẩm thực</a>
+</nav>
+
+<div class="hero">
+<h1>HUẾ - CỐ ĐÔ HOÀNG TRIỀU</h1>
+</div>
+
+<section id="lichsu">
+<h2>Lịch Sử</h2>
+
+<p>Huế là vùng đất gắn liền với những biến chuyển quan trọng của lịch sử Việt Nam. Từ thời chúa Nguyễn mở cõi phương Nam cho đến khi nhà Nguyễn thống nhất đất nước năm 1802, Huế dần trở thành trung tâm chính trị và văn hóa quan trọng bậc nhất.</p>
+
+<p>Dưới triều Nguyễn, Huế được quy hoạch trở thành kinh đô với hệ thống thành quách kiên cố, cung điện tráng lệ và hệ thống nghi lễ chặt chẽ. Mọi hoạt động của đất nước – từ việc thiết triều, ban chiếu chỉ đến tổ chức các kỳ thi – đều diễn ra tại đây.</p>
+
+<p>Kinh thành Huế được xây dựng dựa trên sự kết hợp giữa kiến trúc quân sự phương Tây và tư tưởng phong thủy phương Đông. Ba vòng thành tượng trưng cho ba lớp quyền lực, tạo nên một cấu trúc chặt chẽ và uy nghiêm.</p>
+
+<p>Không chỉ là trung tâm chính trị, Huế còn là cái nôi của nghệ thuật cung đình. Nhã nhạc, múa cung đình, thư pháp, mỹ thuật và ẩm thực hoàng gia đều phát triển rực rỡ trong giai đoạn này.</p>
+
+<p>Trải qua chiến tranh và biến động, nhiều công trình bị tàn phá, nhưng giá trị văn hóa và tinh thần của Huế vẫn còn nguyên vẹn. Chính sự trầm lắng ấy tạo nên chiều sâu mà ít thành phố nào có được.</p>
+
+<p>Huế hôm nay không còn là kinh đô, nhưng vẫn là biểu tượng của một thời đại vàng son – nơi lịch sử không nằm yên trong sách vở mà hiện diện ngay trước mắt người ghé thăm.</p>
+
+</section>
+
+<section id="dulich">
+<h2>Du Lịch</h2>
+
+<p>Du lịch Huế là hành trình khám phá vẻ đẹp cổ kính pha lẫn sự thơ mộng rất riêng. Thành phố này không ồn ào náo nhiệt, mà nhẹ nhàng và sâu lắng như một bản nhạc trầm.</p>
+
+<p>Bên cạnh các di tích lịch sử, Huế còn sở hữu thiên nhiên dịu dàng với núi Ngự Bình, sông Hương và những con đường rợp bóng cây.</p>
+
+<div class="grid">
+
+<div class="card">
+<img src="" alt="Đại Nội Huế">
+<h3>Đại Nội Huế</h3>
+<div class="card-content">
+<p>Đại Nội là quần thể kiến trúc tiêu biểu nhất của cố đô. Nơi đây từng là trung tâm điều hành đất nước trong suốt hơn một thế kỷ.</p>
+<p>Hệ thống cổng thành, điện đài và sân nghi lễ được xây dựng công phu, phản ánh tư duy tổ chức xã hội và quyền lực phong kiến.</p>
+<p>Khi tham quan Đại Nội, du khách không chỉ ngắm nhìn kiến trúc mà còn cảm nhận được không khí trang nghiêm của quá khứ.</p>
+<p>Mỗi bước đi giữa những bức tường son đỏ là một lần chạm vào lịch sử.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="" alt="Chùa Thiên Mụ">
+<h3>Chùa Thiên Mụ</h3>
+<div class="card-content">
+<p>Chùa Thiên Mụ là biểu tượng tâm linh của Huế, nằm bên bờ sông Hương hiền hòa.</p>
+<p>Ngôi chùa có lịch sử hàng trăm năm, gắn liền với nhiều truyền thuyết và câu chuyện dân gian.</p>
+<p>Tháp Phước Duyên bảy tầng vươn cao giữa trời, trở thành hình ảnh quen thuộc khi nhắc đến Huế.</p>
+<p>Không gian nơi đây mang lại cảm giác an yên, tách biệt khỏi sự xô bồ của cuộc sống hiện đại.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="" alt="Sông Hương">
+<h3>Sông Hương</h3>
+<div class="card-content">
+<p>Sông Hương uốn lượn quanh thành phố như dải lụa mềm mại.</p>
+<p>Dòng sông không chỉ mang vẻ đẹp thiên nhiên mà còn là nguồn cảm hứng của thi ca và âm nhạc.</p>
+<p>Buổi tối, ánh đèn phản chiếu xuống mặt nước tạo nên khung cảnh lãng mạn khó quên.</p>
+<p>Nghe ca Huế trên sông là trải nghiệm đặc trưng, kết hợp giữa âm nhạc truyền thống và không gian thiên nhiên thơ mộng.</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<section id="amthuc">
+<h2>Ẩm Thực</h2>
+
+<p>Ẩm thực Huế nổi bật bởi sự tinh tế và cầu kỳ trong cách chế biến. Mỗi món ăn không chỉ để thưởng thức mà còn để cảm nhận văn hóa.</p>
+
+<p>Từ các món cung đình đến món ăn dân dã, tất cả đều phản ánh sự khéo léo và gu thẩm mỹ của người dân xứ Huế.</p>
+
+<div class="grid">
+
+<div class="card">
+<img src="" alt="Bún bò Huế">
+<h3>Bún bò Huế</h3>
+<div class="card-content">
+<p>Bún bò Huế nổi tiếng với nước dùng đậm vị, cay nhẹ và thơm mùi sả.</p>
+<p>Món ăn này có sự kết hợp giữa thịt bò, giò heo và rau sống tươi mát.</p>
+<p>Hương vị hài hòa giữa đậm và thanh khiến thực khách nhớ mãi.</p>
+<p>Đây là món ăn đã góp phần đưa ẩm thực Huế vươn tầm quốc tế.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="" alt="Bún Hến">
+<h3>Bún Hến</h3>
+<div class="card-content">
+<p>Bún hến là món ăn dân dã, gắn liền với đời sống người dân ven sông.</p>
+<p>Hến xào thơm, ăn kèm rau sống, đậu phộng và nước ruốc đậm đà.</p>
+<p>Món ăn giản dị nhưng chứa đựng tinh thần ẩm thực miền Trung.</p>
+<p>Sự hòa quyện giữa nhiều nguyên liệu tạo nên hương vị đặc trưng khó lẫn.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="" alt="Chè Heo Quay">
+<h3>Chè Heo Quay</h3>
+<div class="card-content">
+<p>Chè heo quay là món tráng miệng độc đáo với nhân mặn bên trong lớp bột ngọt.</p>
+<p>Sự kết hợp giữa hai vị tưởng chừng đối lập tạo nên trải nghiệm thú vị.</p>
+<p>Món chè thể hiện sự sáng tạo trong ẩm thực Huế.</p>
+<p>Đây là một trong những đặc sản khiến du khách tò mò và thích thú khi thử lần đầu.</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<footer>
+© 2026 | Huế - Vẻ đẹp vượt thời gian
+</footer>
+
+<button class="toggle-btn" onclick="toggleDark()">Dark Mode</button>
+
+<script>
+function toggleDark(){
+document.body.classList.toggle("dark");
+}
+
+const cards=document.querySelectorAll(".card");
+
+cards.forEach(card=>{
+card.addEventListener("click",function(){
+cards.forEach(c=>{
+if(c!==card){c.classList.remove("active");}
+});
+card.classList.toggle("active");
+});
+});
+</script>
+
+</body>
+</html>
